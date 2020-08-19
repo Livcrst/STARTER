@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <Title>Curso Javascript</Title>
+    </head>
+    <body>
+        
+        <script>
+            //Javascript : os dados js da page devem ficar nessa tag 
+            console.log('Hello Wolrd!');
+            //variaveis 
+            var nome = "Lívia";
+            var idade = 21;
+            var peso = 80.5;
+            var humano = true;
+
+            var alunos = ['Diego','Gabriel','Lucas'];
+
+            var aluno = {
+                nome: 'Diego',
+                idade: 23,
+                peso: 80.5,
+                humano: true
+            };
+
+           /*  console.log(alunos);
+            console.log(aluno.nome);
+            */
+
+            var x = 110, y = 220;
+
+           //Funções 
+           function soma(num1, num2) {
+               var resultado = num1 + num2
+
+               return resultado
+           }
+
+           result = soma(1,2)
+           
+           //Condicionais 
+           function retornaSexo(sexo) {
+               //M or F
+               //Masculino ou Feminino
+               if (sexo === 'M') {
+                    return 'Masculino ';
+               }
+               else if (sexo === 'F'){
+                   return 'Feminino';
+               }
+               else {
+                   return 'Outro ';
+               }
+           }
+
+           //switch case 
+           function retornasexo(sexo) {
+
+               switch (sexo) {
+                    case 'M':
+                       return 'Masculino'
+                    case 'F':
+                        return 'Feminino'
+                   default:
+                       return 'Outro'
+               }
+
+
+           }
+
+          // AND NOT OR
+          var sexo = 'F', idade = 21
+
+
+           if (sexo == 'M' || idade == 21 ) {
+               console.log('OKAY')
+           }    
+           
+           //Repetições 
+         /*for (let i = 0; i < 100; i++) {
+               console.log(i)
+               
+           }*/
+        
+        // intervalo e time out 
+
+        function mostraAlgo () {
+            console.log('Hello Wolrd');
+        }
+
+        //setInterval(mostraAlgo,1000 ) // mostra o valor da função no intervalo de 1 seg , executa varias vezes o mesmo script
+        setTimeout(mostraAlgo,5000) // Executa com um delay 
+
+         </script>
+    </body>
+</html>
