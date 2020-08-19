@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios</title>
+</head>
+<body>
+    <script>
+        //Desafio 1
+        function returnData(User) {
+
+            var data = 'O usuário mora em ' + User.cidade +'/'+User.uf+', no bairro '+ User.bairro+', na rua "'+User.rua+'" com n° '+User.numero
+
+            return data
+            
+        }
+
+        var endereco = {
+            rua: 'Rua dos pinheiros',
+            numero: 1293,
+            bairro: 'Centro',
+            cidade: 'São Paulo',
+            uf: 'SP'
+        }
+
+        console.log(returnData(endereco))
+
+
+
+    </script>
+</body>
+</html>
