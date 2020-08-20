@@ -24,7 +24,23 @@
             uf: 'SP'
         }
 
-        console.log(returnData(endereco))
+       
+
+        // Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+        function pares(numero, number) {
+             let lista = []
+            
+            for (var i = numero; i < number;  i++){
+                if (i%2 === 0){
+                    lista.push(i);
+                    
+                }
+            }
+            return lista
+            
+        }
+
+        console.log(pares(32,321))
 
 
 
