@@ -40,8 +40,64 @@
             
         }
 
-        console.log(pares(32,321))
+        // Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript" e retorna um booleano true/false caso exista ou não.
 
+         function temHabilidade(skills) {
+             index = skills.indexOf('Javascript')
+             if (index == -1 ) {
+                 return false;
+             }
+             else{
+                 return true;
+
+             }
+         }
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        data = temHabilidade(skills); 
+        // A função indexOf retorna o index de um elemento e se o mesmo não tiver no array, retorna -1 
+
+        //Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+
+        function experiencia(anos) {
+            if (anos>0 & anos <=1) {
+                console.log('iniciante');
+            }
+            else if (anos>1 & anos <=3) {
+                console.log('intermediario');
+            }
+            else if (anos>3 & anos <=6) {
+                console.log('avançado');
+            }
+            else if (anos=>7) {
+                console.log('Jedi Master');
+            }
+        }
+        var anosEstudo = 2;
+        //experiencia(anosEstudo);
+
+        //Desafio 5
+
+        
+        
+        function User(listItens) {
+            for (const user of listItens) {
+                sum = user.nome + ' possui as habilidades: ' + user.habilidades.join()
+                console.log(sum);
+            }
+        }
+
+        var usuarios = [
+                {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+
+        User(usuarios)
 
 
     </script>
