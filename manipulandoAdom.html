@@ -7,17 +7,62 @@
 </head>
 <body>
     <div id="app">
-
+<!--
         <input type="text", name="nome">
-        <button class="button">Adicionar</button>
+        <button class="button">Adicionar</button>  -->
+
+        <input id = 'nome' />
+
+        <div class="box">
+            <!-- Se por a tag com um ponto e um nome, é criada a tag já com a classe. -->
+        </div>
     </div>
     <script>
+/*
         var inptElement = document.querySelector('input[name = nome]')
         var btnElement = document.querySelector('button.button');
         btnElement.onclick = 
         function () {
             alert('Botão Clicado')
-        };
+        }; */
+
+        //é possivel criar elementos na DOM com o JS
+
+        var linkElement = document.createElement('a');
+
+        linkElement.setAttribute('href','https://rocketseat.com.br/');
+
+        linkElement.setAttribute('title','Site da Rocket');
+
+        var textElement = document.createTextNode('Acessar Site da Rocketseat');
+
+        linkElement.appendChild(textElement);
+
+        //Para referenciar este item no meu html
+
+        var containerElement = document.querySelector('#app');
+
+        containerElement.appendChild(linkElement);
+
+        // Modificar coisas exemplo remover tag html com o js na DOM
+
+        var inputElement = document.querySelector('#nome');
+
+        containerElement.removeChild(inputElement);
+
+
+        /* É possivel controlar o Css para estilizar usando o JS também */
+
+
+        var boxElement = document.querySelector('.box'); // referenciar a classe
+
+        boxElement.style.width = 100;
+        boxElement.style.height = 100;
+        boxElement.style.backgroudColor = '#1f00';
+
+
+
+
     </script>
     
 </body>
